@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vincular archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Carrito de Compras</h1>
+        <p>El <span class="resaltado">cliente</span> compró un producto por <span style="color: rgb(255, 125, 3);">$49.99</span>.</p>
+     
+        <div class="productos">
+            <h2>Productos Disponibles</h2>
+            <div class="producto">
+                <span>Producto 1 - $10</span>
+                <button class="agregar" data-precio="10">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <span>Producto 2 - $15</span>
+                <button class="agregar" data-precio="15">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <span>Producto 3 - $20</span>
+                <button class="agregar" data-precio="20">Agregar al Carrito</button>
+            </div>
+        </div>
+        
+        <div class="carrito">
+            <h2>Productos en el Carrito</h2>
+            <ul id="lista-carrito"></ul>
+            <p id="total">Total: $0</p>
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="domingo.js"></script> <!-- Vincular archivo JavaScript -->
+</body>
+</html>
